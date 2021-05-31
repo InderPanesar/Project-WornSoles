@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637579243609051250
-    m_Hash: 696276755
+      ticks: 637579276631714173
+    m_Hash: 3687520027
   m_LockFileStatus:
     m_FilePath: C:/Users/Inder/Documents/GitHub/Project-WornSoles/WornSoles/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637579243609360415
-    m_Hash: 3317686452
+      ticks: 637579276631724133
+    m_Hash: 3201598391
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
