@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerState
+{
+    walking,
+    idle
+}
 public class PlayerMovement : MonoBehaviour
 {
-
+    public PlayerState currentState;
     public float speed;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator animator;
+    public MoodLevel moodLevel;
+    public MoodSignal playerMoodSignal;
 
     // Start is called before the first frame update
     void Start()
@@ -34,10 +41,14 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("walking", true);
+            currentState = PlayerState.walking;
+            moodLevel.runTimeMood = moodLevel.runTimeMood + 0.01f;
+            playerMoodSignal.Raise();
         }
         else
         {
             animator.SetBool("walking", false);
+            currentState = PlayerState.idle;
         }
     }
 
