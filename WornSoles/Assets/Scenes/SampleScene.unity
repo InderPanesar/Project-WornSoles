@@ -2877,7 +2877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  speed: 25
+  speed: 50
   moodLevel: {fileID: 11400000, guid: 93117f07f7c0fa6499e95f881f712fb8, type: 2}
   playerMoodSignal: {fileID: 11400000, guid: b90589cd7994c984c98d55eee3472dda, type: 2}
 --- !u!95 &1278368173
